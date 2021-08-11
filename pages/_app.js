@@ -1,10 +1,10 @@
-import { ProvideAuth } from '../lib/auth'
+import { AuthProvider } from '../lib/auth'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-  return <ProvideAuth>
+  return <AuthProvider>
     <Component {...pageProps} />
-  </ProvideAuth>
+  </AuthProvider>
 }
 
 export default MyApp
